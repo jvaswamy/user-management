@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# User Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React.js application for managing users. It allows users to view, add, edit, and delete user details. The app interacts with the JSONPlaceholder API as a mock backend.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+View a list of users.
 
-### `npm start`
+Add new users.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Edit existing users.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Delete users.
 
-### `npm test`
+Responsive UI built with React Bootstrap.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Key Dependencies
 
-### `npm run build`
+React: Library for building user interfaces.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React Bootstrap: CSS framework for styling the UI components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Bootstrap: Front-end CSS framework.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## API Reference
+The application uses the following endpoints from the JSONPlaceholder API:
 
-### `npm run eject`
+GET /users: Fetches the list of users.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+POST /users: Adds a new user.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+PUT /users/{id}: Updates an existing user.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+DELETE /users/{id}: Deletes a user.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Customization
+Additional features or data fields can be added by modifying the components and API service functions accordingly.
 
-## Learn More
+## Troubleshooting
+Issue: Development server not starting.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+       Ensure you have the correct Node.js version installed.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+       Delete the node_modules folder and run npm install again.
 
-### Code Splitting
+Issue: Data not persisting.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+      JSONPlaceholder is a mock API, so changes made via POST, PUT, and DELETE requests are not saved.
 
-### Analyzing the Bundle Size
+.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
